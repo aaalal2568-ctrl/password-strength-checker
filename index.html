@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <main class="container">
+
+        <header class="header">
+            <div class="logo">🔐</div>
+
+            <p class="tag">PASSWORD-STRENGTH-CHECKER</p>
+
+            <h1>Password Strength <span>Checker</span></h1>
+
+            <p class="subtitle">
+                Check your password security and build stronger protection.
+            </p>
+        </header>
+
+        <section class="checker-card">
+
+            <div class="card-top">
+                <div>
+                    <h2>Password Analyzer</h2>
+                    <p>Enter your password below</p>
+                </div>
+
+                <span class="status-dot">● LIVE</span>
+            </div>
+
+            <div class="input-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password..."
+                    autocomplete="off"
+                >
+
+                <button id="toggle-password" type="button">
+                    إظهار
+                </button>
+            </div>
+
+            <div class="char-count" id="character-count">
+                0 characters
+            </div>
+
+            <div class="strength-heading">
+                <span>Security Level</span>
+
+                <span id="strength-label" class="strength-label">
+                    NOT TESTED
+                </span>
+            </div>
+
+            <div class="strength-bar" id="strength-meter">
+                <div class="strength-segment"></div>
+                <div class="strength-segment"></div>
+                <div class="strength-segment"></div>
+                <div class="strength-segment"></div>
+            </div>
+
+            <p class="message" id="strength-message">
+                Enter a password to begin the security check.
+            </p>
+
+            <button class="reset" id="reset-button" type="button">
+                ↻ Reset Checker
+            </button>
+
+            <div class="divider"></div>
+
+            <div class="requirements">
+
+                <h3>Password Requirements</h3>
+
+                <div class="requirement" id="requirement-length">
+                    <span class="requirement-check">○</span>
+                    At least 8 characters
+                </div>
+
+                <div class="requirement" id="requirement-uppercase">
+                    <span class="requirement-check">○</span>
+                    One uppercase letter (A-Z)
+                </div>
+
+                <div class="requirement" id="requirement-lowercase">
+                    <span class="requirement-check">○</span>
+                    One lowercase letter (a-z)
+                </div>
+
+                <div class="requirement" id="requirement-number">
+                    <span class="requirement-check">○</span>
+                    One number (0-9)
+                </div>
+
+                <div class="requirement" id="requirement-symbol">
+                    <span class="requirement-check">○</span>
+                    One special character (!@#$)
+                </div>
+
+            </div>
+
+            <div class="tip-box">
+                <div class="tip-icon">💡</div>
+
+                <div>
+                    <h3>Security Tips</h3>
+
+                    <p id="tips-text">
+                        Use a long, unique password. Avoid personal information and never reuse passwords.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Designed for better digital security <span>✦</span></p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
